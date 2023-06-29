@@ -63,7 +63,7 @@ export default function Home() {
         x = e.clientX - lastX; // / ref.clientWidth *100;
         //console.log(x);
         ref.scroll(xscrollp + x * -1, 0);
-        pictures.forEach((element: { "": any; }) => {
+        pictures.forEach((element: HTMLDivElement) => {
           var panpercent = ((xscrollp + x * -1) / (ref.scrollWidth - ref.clientWidth) * 100)
           panpercent > 100 ? panpercent = 100 : panpercent = panpercent;
           panpercent < 0 ? panpercent = 0 : panpercent = panpercent;
