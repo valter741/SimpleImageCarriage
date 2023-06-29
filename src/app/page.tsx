@@ -68,6 +68,7 @@ export default function Home() {
           panpercent > 100 ? panpercent = 100 : panpercent = panpercent;
           panpercent < 0 ? panpercent = 0 : panpercent = panpercent;
           element.style.objectPosition =  panpercent + "% 100%"
+          
         });
       }
     }
