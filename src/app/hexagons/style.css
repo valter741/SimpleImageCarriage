@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(60,60,60);
+  background: linear-gradient(90deg, rgba(60,60,60,1) 0%, rgba(113,111,111,1) 33%, rgba(222,222,222,1) 92%, rgba(222,222,222,1) 100%);
+  overflow: hidden;
+}
+
+.mainhex {
+  position: absolute;
+  top: -16px;
+  left: -86px;
+}
+
+.mainhex .hexagon{
+  background: rgba(222,222,222,1);
+}
+
+.mainhex .hex,  .mainhex .hex2, .mainhex .hex3{
+  width: 52px;
+  height: 30px;
+  background: inherit;
+  position: absolute;
+  border: 0px;
+  border-radius: 4px;
+  transition: 0.3s;
+  -webkit-user-drag: none;
+}
+
+.mainhex .hexagon:hover {
+  background: rgba(60,60,60,1);
+}
