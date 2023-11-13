@@ -8,7 +8,6 @@ export default function Home() {
   const gridSize = 50;
 
   function click (element : HTMLDivElement) {
-    console.log("clicked");
     element.style.background = "rgba(60,60,60,1)";
   }
   

@@ -30,26 +30,6 @@ export default function Home() {
   let isMouseDown = false;
   let prev = 0;
 
-  const throttleFunction=(delay: any)=>{
-     
-    // Previously called time of the function
-    let prev = 0;
-    return () => {
-      // Current called time of the function
-      let now = new Date().getTime();
-
-      if(now - prev> delay){
-        prev = now;
-        console.log("kaki");
-        onMouseMove;
-        // "..." is the spread operator here
-        // returning the function with the
-        // array of arguments
-        return; 
-      }
-    }
-  }
-
   const onMouseDown = (e: any) => {
     isMouseDown = true;
     lastX = e.clientX;
@@ -68,7 +48,6 @@ export default function Home() {
           panpercent > 100 ? panpercent = 100 : panpercent = panpercent;
           panpercent < 0 ? panpercent = 0 : panpercent = panpercent;
           element.style.objectPosition =  panpercent + "% 100%"
-          
         });
       }
     }
@@ -94,17 +73,17 @@ export default function Home() {
     >
       <div
         id="scrollelem"
-        className="flex flex-row items-center overflow-auto p-20 select-none no-scrollbar"
+        className="flex flex-row items-center overflow-auto select-none no-scrollbar h-screen"
       >
         <div className="min-h-[100%] min-w-[30%] px-10" />
-        <img src="/11.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/12.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/13.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/14.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/15.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/16.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/17.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
-        <img src="/18.jpg" className="Picture px-10 drag-none object-cover object-left h-192 w-160" />
+        <img src="/11.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/12.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/13.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/14.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/15.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/16.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/17.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
+        <img src="/18.jpg" className="Picture px-10 drag-none object-cover object-left h-4/5 w-2/6" />
         <div className="min-h-[100%] min-w-[30%] px-10" />
       </div>
     </main>
